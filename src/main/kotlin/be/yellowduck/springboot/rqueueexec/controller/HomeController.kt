@@ -1,4 +1,4 @@
-package be.yellowduck.springboot.rqueueexec
+package be.yellowduck.springboot.rqueueexec.controller
 
 import org.springframework.stereotype.Controller
 import org.springframework.ui.Model

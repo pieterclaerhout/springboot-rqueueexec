@@ -1,4 +1,4 @@
-package be.yellowduck.springboot.rqueueexec
+package be.yellowduck.springboot.rqueueexec.model
 
 import lombok.AllArgsConstructor
 import lombok.Data

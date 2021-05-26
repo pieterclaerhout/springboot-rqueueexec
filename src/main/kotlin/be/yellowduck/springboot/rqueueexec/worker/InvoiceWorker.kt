@@ -1,17 +1,11 @@
-package be.yellowduck.springboot.rqueueexec
+package be.yellowduck.springboot.rqueueexec.worker
 
+import be.yellowduck.springboot.rqueueexec.model.Invoice
 import com.github.sonus21.rqueue.annotation.RqueueListener
-import lombok.extern.slf4j.Slf4j
 import org.springframework.stereotype.Component
 
 @Component
-@Slf4j
-class MessageListener {
-
-    @RqueueListener(value = ["\${email.queue.name}"])
-    fun sendEmail(email: Email) {
-        println("Processing Email: ${email}")
-    }
+class InvoiceWorker {
 
     @RqueueListener(value = ["\${invoice.queue.name}"])
     fun generateInvoice(invoice: Invoice) {
